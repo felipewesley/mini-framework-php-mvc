@@ -1,0 +1,8 @@
+/* This stylesheet created in June 29th, 2020. */
+body {
+    font: 1em sans-serif; 
+    background-color: #E4E4E4;
+    padding: 7.5px;
+    border: 1px dashed #000; 
+    margin: 15px;
+}
