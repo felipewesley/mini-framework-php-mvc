@@ -5,13 +5,13 @@
  * @link https://github.com/felipewesley/mini-framework-php-mvc
  */
 
-namespace App\Controller; 
+namespace App\Controller;
 
-use MiniFramework\Controller\Action; 
-// use MiniFramework\Controller\Debug; 
+use MiniFramework\Controller\Action;
+// use MiniFramework\Controller\Debug;
 
 class IndexController extends Action {
-    
+
     public function index(){
 
         /**
@@ -19,15 +19,15 @@ class IndexController extends Action {
          * Se a rota requisitada não existir no seu projeto, este método será chamado
          */
 
-        $this->view->msg = 'Hello world!'; 
+        $this->view->msg = 'Hello world!';
 
-        return $this->render('index', 'layout_default'); 
+        return $this->render('index', 'layout_default');
     }
 
     public function about(){
-        
-        $this->view->title = 'About'; 
 
-        return $this->render('about', null, ['css' => 'about']); 
+        $this->view->title = 'About';
+
+        return $this->render('about', 'layout_default', ['css' => 'about', 'js' => 'about']);
     }
 }
